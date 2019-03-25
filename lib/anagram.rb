@@ -13,7 +13,7 @@ class Anagram
   end 
   
   def match(anagram_array)
-    anagram_array.collect do |word|
+    anagram_array.map do |word|
       @word == word
       
     
