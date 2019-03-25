@@ -12,13 +12,13 @@ class Anagram
     # binding.pry 
   end 
   
-  def match(anagram_array)
-    anagram_array.select do |word|
-      if @word == word
-        @@words << word
-      end 
-    end 
-  end 
+  #def match(anagram_array)
+   # anagram_array.select do |word|
+    #  if @word == word
+     #   @@words << word
+      #end 
+    #end 
+  #end 
   
   # take initialzied word and split into an array and sort
   # take the incoming array word and split into an array and sort
@@ -27,11 +27,12 @@ class Anagram
   
   def match(anagram_array)
     anagram_array.select do |word|
-    if @word.split(//).sort == word.split(//).sort 
-      @@words << word 
-    end   
+      if @word.split(//).sort == word.split(//).sort 
+        @@words << word 
+      end
+    end 
+  end 
 end 
-
 =begin 
   it 'should detect no matches' do
     diaper = Anagram.new('diaper')
