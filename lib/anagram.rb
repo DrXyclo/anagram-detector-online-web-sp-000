@@ -15,7 +15,8 @@ class Anagram
   def match(anagram_array)
     anagram_array.map do |word|
       if @word == word
-        @@words << word 
+        @@words << word
+        
       end 
     end 
   end 
