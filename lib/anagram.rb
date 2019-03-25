@@ -7,9 +7,9 @@ class Anagram
   
   
   def initialize(word)
-    binding.pry
+    # binding.pry
     @word = word 
-    binding.pry 
+    # binding.pry 
   end 
   
   
