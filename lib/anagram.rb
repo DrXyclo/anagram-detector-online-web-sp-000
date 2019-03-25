@@ -12,7 +12,12 @@ class Anagram
     # binding.pry 
   end 
   
-  
+  def match(anagram_array)
+    anagram_array.each do |word|
+      word == @word
+      word
+    
+  end 
   
   
   
