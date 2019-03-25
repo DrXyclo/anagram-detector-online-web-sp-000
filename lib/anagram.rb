@@ -20,10 +20,13 @@ class Anagram
     end 
   end 
   
-  # take initialzied word and split into an array
-  # take the incoming array word and split into an array
+  # take initialzied word and split into an array and sort
+  # take the incoming array word and split into an array and sort
   # compare the two arrays
   # if the two arrays are equal return the incoming array word
+  
+  def match(anagram_array)
+    @word.split
   
 end 
 
