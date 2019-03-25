@@ -27,8 +27,9 @@ class Anagram
   
   def match(anagram_array)
     anagram_array.select do |word|
-    @word.split(//).sort == word.split(//) 
-  
+    if @word.split(//).sort == word.split(//).sort 
+      @@words << word 
+    end   
 end 
 
 =begin 
