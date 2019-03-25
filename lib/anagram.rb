@@ -4,7 +4,7 @@ require 'pry'
 
 class Anagram
   attr_accessor :word 
-  
+  @@words = []
   
   def initialize(word)
     # binding.pry
@@ -15,7 +15,7 @@ class Anagram
   def match(anagram_array)
     anagram_array.map do |word|
       @word == word
-      
+      @@words << word 
     
     end 
   end 
