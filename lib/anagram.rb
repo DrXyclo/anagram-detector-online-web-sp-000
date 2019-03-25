@@ -26,7 +26,8 @@ class Anagram
   # if the two arrays are equal return the incoming array word
   
   def match(anagram_array)
-    @word.split
+    anagram_array.select do |word|
+    @word.split(//).sort == word.split(//) 
   
 end 
 
