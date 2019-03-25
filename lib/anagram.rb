@@ -16,7 +16,7 @@ class Anagram
     anagram_array.each do |word|
       word == @word
       word
-    
+    end 
   end 
   
   
